@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>responsive registration form</h2>
+        
+        <form action="index.html" method="post">
+            <div class="input-container">
+                <div class="icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <input type="email" placeholder="Email" required>
+            </div>
+
+            <div class="input-container">
+                <div class="icon">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <input type="password" placeholder="Password" required>
+            </div>
+
+            <div class="input-container">
+                <div class="icon">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <input type="password" placeholder="Re-type Password" required>
+            </div>
+
+            <div class="name-group">
+                <div class="input-container">
+                    <div class="icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <input type="text" placeholder="First Name" required>
+                </div>
+                <div class="input-container">
+                    <div class="icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <input type="text" placeholder="Last Name" required>
+                </div>
+            </div>
+
+            <div class="gender-container">
+                <input type="radio" id="Male" name="gender" value="male">
+                <label for="Male">Male</label>
+
+                <input type="radio" id="Female" name="gender" value="female"> 
+                <label for="Female">Female</label>
+            </div>
+
+            <div class="select-container">
+                <select name="country" id="Country" required>
+                    <option value="" selected>Select a Country</option>
+                    <option value="Egypt">Egypt</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Malaysia">Malaysia</option>
+                </select>
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox" id="confirm" name="terms" value="terms" >
+                <label for="confirm"> I agree with terms and conditions</label><br>
+    
+            </div>
+            
+            <div class="checkbox">
+                <input type="checkbox" id="confirm2" name="newsletter" value="newsletter">
+                <label for="confirm2"> I want to receive the newsletter</label><br>
+            </div>
+
+            <button type="submit">Register</button>
+
+
+        </form>
+    </div>
+</body>
+</html>
